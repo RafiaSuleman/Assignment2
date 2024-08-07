@@ -1,21 +1,12 @@
 import Card from "@/components/card/card";
 import Footer from "@/components/footer/footer";
+import Navbar from "@/components/navbar/navbar";
 import Image from "next/image";
 
 export default function Home() {
   return (  
-  <div className =  "overflow-hidden bg-[#F3F4F6] ">
-    <nav className="bg-[#2563EB] text-white flex justify-center sm:justify-between  items-center flex-wrap px-0 sm:px-[90px] py-[16px]">
-      <div><h1 className="text-white font-bold text-[25px]"> Assignment 2</h1></div>
-        <div>
-          <ol className="list-none ml-[5px] flex gap-3 text-center flex-wrap justify-center item-center ">
-            <li>Home</li>
-            <li>About</li>
-            <li>Contact</li>
-            <li>Services</li>
-          </ol>
-      </div>
-    </nav>
+  <div className =  "overflow-hidden bg-[#F3F4F6] relative">
+   <Navbar/>
     <div className="grid md:grid-cols-3  sm:grid-cols-1">
       <div className="bg-[#22C55E] m-[10px] py-7 px-[25px] rounded-lg text-white">
         <h1 className="mb-[10px] text-xl font-bold">Card 1</h1>
